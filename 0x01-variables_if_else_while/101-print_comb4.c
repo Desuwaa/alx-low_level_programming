@@ -1,28 +1,31 @@
 #include<stdio.h>
 /**
- * main - prints three digits
+ * main - prints two digits
  * Return: always 0
  */
 int main(void)
 {
-	int n, m, o;
+	int i, j, k;
 
-	for (n = 48; n < 58; n++)
-		for (m = 49; m < 58; m++)
-			for (o = 50; o < 58; o++)
+	for (i = '0'; i < '9'; i++)
+	{
+		for (j = i + 1; j <= '9'; j++)
+		{
+			for (k = j + 1; k <= '9'; k++)
 			{
-				if (o > m && m > n)
+				if ((j != i) != k)
 				{
-					putchar (m);
-					putchar (n);
-					putchar (o);
-					if (n != 55 || m != 56)
-					{
-						putchar (',');
-						putchar (' ');
-					}
+					putchar(i);
+					putchar(j);
+					putchar(k);
+					if (i == '7' && j == '8')
+						continue;
+					putchar(',');
+					putchar(' ');
 				}
 			}
+		}
+	}
 	putchar ('\n');
 	return (0);
 }
