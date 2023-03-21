@@ -1,20 +1,20 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - Prints a word
- * Return: always 0
+ * main - print _putchar
+ * is written by me
+ * Return: 0
  */
+
 int main(void)
 {
-	printf('_');
-	printf('p');
-	printf('u');
-	printf('t');
-	printf('c');
-	printf('h');
-	printf('a');
-	printf('r');
-	printf('\n');
-
+	putchar('');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
