@@ -1,5 +1,25 @@
 #include "main.h"
-#include <math.h>
+
+/**
+ * _sqrt - recursing to find the natural square root of a number
+ * @n: multiplier
+ * @q: square root of
+ *
+ * Return: result of square root of q
+ */
+int _sqrt(int n, int q)
+{
+	if (n * n == q)
+	{
+		return (n);
+	}
+	if (n == q)
+	{
+		return (-1);
+	}
+
+	return (_sqrt(n + 1, q));
+}
 
 /**
  * _sqrt_recursion - returning the natural square root of n
@@ -9,18 +29,10 @@
  */
 int _sqrt_recursion(int n)
 {
-	float sqrt = _pow_recursion(n, 0.5);
+	if (n < 1)
+	{
+		return (-1);
+	}
 
-	if (_pow_recursion(sqrt, 2) == n)
-		return (sqrt);
-	return (-1);
+	return (_sqrt(1, n));
 }
-int _pow_recursion(int x, float y)
-{
-        if (y < 0)
-                return (-1);
-        if (y == 0)
-                return (1);
-        return (x * _pow_recursion(x, y - 1));
-}
-		
