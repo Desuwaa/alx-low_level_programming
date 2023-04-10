@@ -4,7 +4,7 @@
 /**
  * main - a program that prints its name
  * @argc: arguement counter
- * @agrv: array of strings of strings of arguements
+ * @argv: array of strings of strings of arguements
  *
  * Return: always return 0
  */
