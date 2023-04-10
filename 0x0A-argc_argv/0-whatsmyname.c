@@ -1,16 +1,15 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * main - a prgram that prints its name
+ * main - a program that prints its name
  * @argc: arguement counter
- * @argv: array of pointers to arguements
+ * @agrv: array of strings of strings of arguements
  *
- * Return: return always 0
+ * Return: always return 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	argc = argc;
-	printf("%s\n", argv[0]);
-
+	printf("%s\n", *argv);
 	return (0);
 }
