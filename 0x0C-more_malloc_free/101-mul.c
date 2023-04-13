@@ -40,7 +40,7 @@ int _strlen(char *s)
 }
 
 /**
- * errors - handles errors for main
+ * errors - handle errors for main
  */
 
 void errors(void)
